@@ -8479,11 +8479,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vasif\\Desktop\\RunFitness\\RunFitness\\RunFitness.csproj",
+      "projectUniqueName": "C:\\Users\\Vasif\\Desktop\\RunFitnessFinal\\RunFitness\\RunFitness.csproj",
       "projectName": "RunFitness",
-      "projectPath": "C:\\Users\\Vasif\\Desktop\\RunFitness\\RunFitness\\RunFitness.csproj",
+      "projectPath": "C:\\Users\\Vasif\\Desktop\\RunFitnessFinal\\RunFitness\\RunFitness.csproj",
       "packagesPath": "C:\\Users\\Vasif\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vasif\\Desktop\\RunFitness\\RunFitness\\obj\\",
+      "outputPath": "C:\\Users\\Vasif\\Desktop\\RunFitnessFinal\\RunFitness\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Vasif\\AppData\\Roaming\\NuGet\\NuGet.Config",

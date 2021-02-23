@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zn3Cf2zzVNx4O8xKt13UZhb6XEXOlwqxovL+mPa3TwzOeGG6cAqOakX+BqjQLyPbTfU8Sm77OO+AWr4+UfoT5Q==",
+  "dgSpecHash": "VgMbcJNboHD4N3lz7nrcyZQsTOfoR4n/rZEp6ATPb7Lcubo/Ul6N7aEu2OCganEJeoI/YWcim2nAOKcnCqlw0A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vasif\\Desktop\\RunFitness\\RunFitness\\RunFitness.csproj",
+  "projectFilePath": "C:\\Users\\Vasif\\Desktop\\RunFitnessFinal\\RunFitness\\RunFitness.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vasif\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Vasif\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

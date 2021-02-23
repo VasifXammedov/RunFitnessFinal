@@ -17,10 +17,28 @@ namespace RunFitness.Controllers
         {
             _db = db;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index(string searchString, int? page)
         {
-            List<Trainer> trainers = _db.Trainers.Where(t => t.IsDeleted == false).ToList();
-            return View(trainers);
+            ViewData["GetTrainers"] = searchString;
+            var trainerQuery = from x in _db.Trainers select x;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                trainerQuery = trainerQuery.Where(x => x.Name.Contains(searchString) && x.IsDeleted == false);
+                return View(await trainerQuery.AsNoTracking().ToListAsync());
+            }
+            else
+            {
+                ViewBag.PageCount = Decimal.Ceiling((decimal)_db.Trainers.Where(b => b.IsDeleted == false).Count() / 4);
+                ViewBag.page = page;
+                if (page == null)
+                {
+                    List<Trainer> trainer = _db.Trainers.Where(b => b.IsDeleted == false).Take(4).ToList();
+                    return View(trainer);
+                }
+                List<Trainer> trainer1 = _db.Trainers.Where(b => b.IsDeleted == false).Skip((int)(page - 1) * 4).Take(4).ToList();
+                return View(trainer1);
+            }
+           
         }
         public IActionResult Detail(int? id)
         {

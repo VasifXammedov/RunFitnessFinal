@@ -21,13 +21,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="search-wrapper">
+                    <form class="search-wrapper" method="get" asp-action="Index">
                         <div class="input-holder">
-                            <input type="text" class="search-input" placeholder="Type to search" />
-                            <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                            <input type="text" class="search-input" value="@ViewData["GetTrainers"]" name="searchString" placeholder="Type to search" />
+                            <button class="search-icon" type="submit" onclick="searchToggle(this, event);"><span></span></button>
                         </div>
                         <span class="close" onclick="searchToggle(this, event);"></span>
-                    </div>
+                    </form>
                 </div>
             </div>
 
@@ -51,14 +51,26 @@
                 }
 
             </div>
-            <div class="row mt-5 d-flex justify-content-center align-atim-center">
-                    <ul class="pagination pagination-sm">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1">1</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    </ul>
+            <div class="row mt-5" style="margin-left:43%" >
+                <ul class="pagination pagination-lg">
+                    @for (int i = 1; i <= ViewBag.PageCount; i++)
+                    {
+                        if (i == ViewBag.page)
+                        {
+                            <li class="page-item active" aria-current="page">
+                                <span class="page-link">@i</span>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="page-item">
+                                <a class="page-link" asp-controller="Trainer"
+                                   asp-action="Index"
+                                   asp-route-page="@i">@i</a>
+                            </li>
+                        }
+                    }
+                </ul>
             </div>
         </div>
     </section>
