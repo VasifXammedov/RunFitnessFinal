@@ -1,0 +1,63 @@
+﻿@model Bio
+    <header>
+        <!--Nav bar Start    -->
+        <nav class="Run">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="nav-logo">
+                            <a href="#">
+                                <img src="~/img/@Model.LogoImage">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="nav-icon ">
+                            <button type="button" id="NavOpen" class="btn btn-info navbar-btn">
+                                <img src="~/img/icon.png">
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="navigation" id="navigation">
+                        <div class="close-btn d-flex justify-content-between">
+                            <div class="nav-name">
+                                Navigation
+                            </div>
+                            <button type="button" id="NavClose" class="  ">
+                                <i class="fas fa-times-circle "></i>
+                            </button>
+                        </div>
+                        <div class="wrapper">
+                            <div class="menu_section">
+                                <ul>
+                                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                                    <li><a asp-controller="About" asp-action="Index">About</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link p-0 m-0" asp-controller="Trainer" asp-action="Index" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                           aria-expanded="false">
+                                            Trainers
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" style="background-color: rgb(210, 210, 218);" asp-controller="Trainer" asp-action="Index">Trainers</a></li>
+                                            <li>
+                                                <a class="dropdown-item" style="background-color: rgb(210, 210, 218);" asp-controller="Trainer" asp-action="TrainerDetails">
+                                                    Trainers
+                                                    Details
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a asp-controller="Service" asp-action="Index">Services</a></li>
+                                    <li><a asp-controller="Table" asp-action="Index">Table</a></li>
+                                    <li><a asp-controller="Contact" asp-action="Index">Contact us</a></li>
+                                    <li><a asp-controller="Login" asp-action="Index">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav bar End -->
+    </header>

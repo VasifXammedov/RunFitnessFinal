@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210220132140_CreatTrainerTable.cs" />
+    <Compile Remove="Migrations\20210220132140_CreatTrainerTable.Designer.cs" />
+    <Compile Remove="Migrations\20210220192045_CreatBannerTable.cs" />
+    <Compile Remove="Migrations\20210220192045_CreatBannerTable.Designer.cs" />
+    <Compile Remove="Migrations\20210220192410_CreatBannerTable1.cs" />
+    <Compile Remove="Migrations\20210220192410_CreatBannerTable1.Designer.cs" />
+    <Compile Remove="Migrations\20210220222908_CreatTrainerWeek.cs" />
+    <Compile Remove="Migrations\20210220222908_CreatTrainerWeek.Designer.cs" />
+    <Compile Remove="Migrations\20210220223452_CreatTrainerWeek.cs" />
+    <Compile Remove="Migrations\20210220223452_CreatTrainerWeek.Designer.cs" />
+    <Compile Remove="Migrations\20210220231720_CreatTrainerTables.cs" />
+    <Compile Remove="Migrations\20210220231720_CreatTrainerTables.Designer.cs" />
+    <Compile Remove="Migrations\20210222234357_CreateBioTable.cs" />
+    <Compile Remove="Migrations\20210222234357_CreateBioTable.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\site.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>

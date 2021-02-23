@@ -1,0 +1,77 @@
+﻿@model AboutVM
+@{ ViewData["Title"] = "Index";
+    }
+<main>
+    <div id="inner_page_banner" class="section"
+         style="background-image:url(./img/Slider/@Model.About.Image);background-size: cover;background-position: center center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="full">
+                        <h3>@Model.About.Title</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fitness sectionu Start -->
+    <section id="fitness" style="overflow: hidden;">
+        <div class="section about_section layout_padding half_bg_theme padding_bottom_0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 imges">
+                        <div class="full text_align_right_img">
+                            <img src="~/img/fitness/@Model.FitnessDetail.Image" alt="#">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="full paddding_left_15">
+                            <div class="heading_main text_align_left">
+                                <h2>@Html.Raw(Model.FitnessDetail.Title)</h2>
+                            </div>
+                        </div>
+                        <div class="full paddding_left_15">
+                            <p>
+                              @Html.Raw(Model.FitnessDetail.Description)
+                            </p>
+                        </div>
+                        <div class="full paddding_left_15 margin-top_30">
+                            <a class="main_bt" asp-controller="Home" asp-action="Index"> Go Back <i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fitness End -->
+    <!-- Stories section start -->
+    <section id="stories" style="overflow: hidden;">
+        <div class="section story_section layout_padding">
+            <div class="container-fluid">
+                <div class="row white_bg">
+                    <div class="col-lg-6">
+                        <div class="full story_blog paddding_left_15">
+                            <div class="heading_main text_align_left">
+                                <h2>@Html.Raw(Model.Success.Title)</h2>
+                            </div>
+                        </div>
+                        <div class="full paddding_left_15">
+                            <p>
+                               @Html.Raw(Model.Success.Description)
+                            </p>
+                        </div>
+                        <div class="full paddding_left_15 margin-top_30">
+                            <a class="main_bt" asp-controller="Home" asp-action="Index"> Go Back <i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="full text_align_right_img">
+                            <img class="img-responsive" src="~/img/stories/@Model.Success.Image" alt="#" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Stories End -->
+</main>

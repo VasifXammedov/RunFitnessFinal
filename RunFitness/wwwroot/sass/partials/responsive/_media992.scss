@@ -1,0 +1,16 @@
+@media only screen and(max-width:992px){
+    #fitness{
+
+        .half_bg_theme{
+            &::after{
+                width: 50%;
+                height: 46% !important;
+               
+            }
+        }
+    }
+    #stories .container-fluid .white_bg {
+    height: 160vh;
+}
+    
+}

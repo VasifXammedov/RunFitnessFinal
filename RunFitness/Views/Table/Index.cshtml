@@ -1,0 +1,127 @@
+﻿@model TableVM
+@{
+    ViewData["Title"] = "Index";
+    int weekId = 0;
+    //int trainerId = 0;
+    //int timeId = 0;
+}
+<main>
+    <!-- Login start -->
+    <div id="inner_page_banner" class="section"
+         style="background-image:url(./img/Slider/slider_7.jpg);background-size: cover;background-position: center center; background-position: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="full">
+                        <h3>Time Table</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login end -->
+
+    <article>
+        <table class="all" align="center">
+            <thead>
+                <tr>
+                    <th class="days t">Time</th>
+                    @foreach (Week w in Model.Weeks)
+                    {
+                        <th class="days">@w.Name</th>
+                        weekId = w.Id;
+                        //foreach (TrainerWeek tw in w.TrainerWeeks)
+                        //{
+                        //    trainerId = tw.TrainerId;
+                        //    timeId = tw.TimeId;
+                        //}
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="time">@Model.Times.ElementAt(0).StartTime</th>
+                    @foreach (Week w in Model.Weeks)
+                    {
+
+                        @foreach (TrainerWeek tw in w.TrainerWeeks)
+                        {
+
+                                if (Model.Times.ElementAt(0).Id == tw.TimeId)
+                                {
+                                    <td>@tw.Trainer.Name<br>@tw.Trainer.Profession</td>
+                                }
+                                @*if(tw.Id==)
+                                {
+                                    <td>___</td>
+                                }*@
+                        }
+                    }
+                </tr>
+                <tr>
+                    <th class="time">@Model.Times.ElementAt(1).StartTime</th>
+                    <td>___</td>
+                    <td>Jennifer<br>(Fitness)</td>
+                    <td>___</td>
+                    <td>Eamily Cristian<br>(Cardio)</td>
+                    <td>___</td>
+                    <td class="lastrows">Bill Carsin<br>(Bodybilding)</td>
+                </tr>
+                <tr>
+                    <th class="time">@Model.Times.ElementAt(2).StartTime</th>
+                    <td>Eamily Cristian<br>(Cardio)</td>
+                    <td>___</td>
+                    <td>Bill Carsin<br>(Bodybilding)</td>
+                    <td>___</td>
+                    <td>Jennifer<br>(Fitness)</td>
+                    <td class="lastrows">___</td>
+                </tr>
+                <tr>
+                    <th class="time">@Model.Times.ElementAt(3).StartTime</th>
+                    <td>Jennifer<br>(Fitness)</td>
+                    <td>___</td>
+                    <td>Eamily Cristian<br>(Cardio)</td>
+                    <td>___</td>
+                    <td>Bill Carsin<br>(Bodybilding)</td>
+                    <td class="lastrows">___</td>
+                </tr>
+                <tr>
+                    <th class="time">@Model.Times.ElementAt(4).StartTime</th>
+                    <td>___</td>
+                    <td>Jennifer<br>(Fitness)</td>
+                    <td>___</td>
+                    <td>Eamily Cristian<br>(Cardio)</td>
+                    <td>___</td>
+                    <td class="lastrows">Bill Carsin<br>(Bodybilding)</td>
+                </tr>
+                <tr>
+                    <th class="time">@Model.Times.ElementAt(5).StartTime</th>
+                    <td>Bill Carsin<br>(Bodybilding)</td>
+                    <td>Eamily Cristian<br>(Cardio)</td>
+                    <td>___</td>
+                    <td>Jennifer<br>(Fitness)</td>
+                    <td>___</td>
+                    <td class="lastrows">___</td>
+                </tr>
+                <tr>
+                    <th class="time">@Model.Times.ElementAt(6).StartTime</th>
+                    <td>___</td>
+                    <td>___</td>
+                    <td>Eamily Cristian<br>(Cardio)</td>
+                    <td>___</td>
+                    <td>Bill Carsin<br>(Bodybilding)</td>
+                    <td class="lastrows">Jennifer<br>(Fitness)</td>
+                </tr>
+                <tr class="last">
+                    <th class="time lr">@Model.Times.ElementAt(7).StartTime</th>
+                    <td class="lr">Jennifer<br>(Fitness)</td>
+                    <td class="lr">___</td>
+                    <td class="lr">Bill Carsin<br>(Bodybilding)</td>
+                    <td class="lr">___</td>
+                    <td class="lr">___</td>
+                    <td class="lastrows lr">Eamily Cristian<br>(Cardio)</td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+</main>

@@ -1,0 +1,21 @@
+﻿@model Fitness
+<div class="col-lg-6 imges">
+    <div class="full text_align_right_img">
+        <img src="~/img/fitness/@Model.Image" alt="#">
+    </div>
+</div>
+<div class="col-lg-6">
+    <div class="full paddding_left_15">
+        <div class="heading_main text_align_left">
+            <h2>@Html.Raw(Model.Title)</h2>
+        </div>
+    </div>
+    <div class="full paddding_left_15">
+        <p>
+            @Html.Raw(Model.Description)
+        </p>
+    </div>
+    <div class="full paddding_left_15 margin-top_30">
+        <a class="main_bt" asp-controller="About" asp-action="Index">Read More <i class="fa fa-long-arrow-right"></i></a>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+﻿@model List<Trainer>
+@{
+    ViewData["Title"] = "Index";
+}
+<main>
+    <div id="inner_page_banner" class="section"
+         style="background-image:url(img/Slider/slider_6.jpg);background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="full">
+                        <h3>Trainers</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Search Form Start-->
+    <!--End of Search Form-->
+    <section id="trainer" style="background-image: url(img/popular/qantel_1.png); overflow: hidden;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search" />
+                            <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                        </div>
+                        <span class="close" onclick="searchToggle(this, event);"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                @foreach (Trainer tra in Model)
+                {
+                    <div class="col-lg-3">
+                        <div class="single-trainer mb-45">
+                            <div class="single-trainer-img">
+                                <a asp-controller="Trainer" asp-action="Detail" asp-route-id="@tra.Id">
+                                    <img class="img-fluid" src="~/img/trainers/@tra.Image"
+                                         alt="trainer">
+                                </a>
+                            </div>
+                            <div class="single-trainer-content text-center">
+                                <h2><a asp-controller="Trainer" asp-action="Detail" asp-route-id="@tra.Id">@tra.Name</a></h2>
+                                <h4>@tra.Profession</h4>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+            <div class="row mt-5 d-flex justify-content-center align-atim-center">
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">1</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+    
+
+</main>

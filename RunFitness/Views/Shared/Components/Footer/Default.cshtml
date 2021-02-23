@@ -1,0 +1,61 @@
+﻿@model Bio
+    <footer class="footer-box" style="overflow: hidden;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-img">
+                        <img class="img-responsive" src="~/img/@Model.LogoImage" alt="#" />
+                    </div>
+                    <div class="footer-text ">
+                        <p>
+                            @Model.Description
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-adress">
+                        <div class="footer_blog ">
+                            <h3>@Model.Title</h3>
+                            <p>
+                               @Html.Raw(Model.Address)
+                            </p>
+                        </div>
+                        <div class="full">
+                            <ul class="social_icon ml-auto d-flex">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="full">
+                        <div class="footer_blog full white_fonts">
+                            <h3>OUR TIMINGS</h3>
+                        </div>
+                        <div class="full timetable_blog d-flex justify-content-between">
+                            <ul class="time_table  ">
+                                <li>Monday</li>
+                                <li>Tuesday</li>
+                                <li>Thursday</li>
+                                <li>Friday</li>
+                                <li>Saturday</li>
+                                <li>Sunday</li>
+                            </ul>
+                            <ul class="time_table text-end">
+                                <li>Monday</li>
+                                <li>Tuesday</li>
+                                <li>Thursday</li>
+                                <li>Friday</li>
+                                <li>Saturday</li>
+                                <li>Sunday</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
