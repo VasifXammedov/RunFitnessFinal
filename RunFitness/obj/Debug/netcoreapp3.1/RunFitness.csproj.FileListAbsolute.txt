@@ -318,3 +318,7 @@ C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\static
 C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\RunFitness.dll
 C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\RunFitness.pdb
 C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\RunFitness.genruntimeconfig.cache
+C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\_ViewStart.cshtml.g.cs
+C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\_ViewImports.cshtml.g.cs
+C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\Dashboard\Index.cshtml.g.cs
