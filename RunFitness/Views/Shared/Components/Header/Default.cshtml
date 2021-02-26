@@ -33,21 +33,24 @@
                                 <ul>
                                     <li><a asp-controller="Home" asp-action="Index">Home</a></li>
                                     <li><a asp-controller="About" asp-action="Index">About</a></li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link p-0 m-0" asp-controller="Trainer" asp-action="Index" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                           aria-expanded="false">
-                                            Trainers
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" style="background-color: rgb(210, 210, 218);" asp-controller="Trainer" asp-action="Index">Trainers</a></li>
-                                            <li>
-                                                <a class="dropdown-item" style="background-color: rgb(210, 210, 218);" asp-controller="Trainer" asp-action="TrainerDetails">
-                                                    Trainers
-                                                    Details
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                    <li><a asp-controller="Trainer" asp-action="Index">Trainers</a></li>
+
+
+                                    @*<li class="nav-item dropdown">
+            <a class="nav-link p-0 m-0" asp-controller="Trainer" asp-action="Index" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+               aria-expanded="false">
+                Trainers
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" style="background-color: rgb(210, 210, 218);" asp-controller="Trainer" asp-action="Index">Trainers</a></li>
+                <li>
+                    <a class="dropdown-item" style="background-color: rgb(210, 210, 218);" asp-controller="Trainer" asp-action="TrainerDetails">
+                        Trainers
+                        Details
+                    </a>
+                </li>
+            </ul>
+        </li>*@
                                     <li><a asp-controller="Service" asp-action="Index">Services</a></li>
                                     <li><a asp-controller="Table" asp-action="Index">Table</a></li>
                                     <li><a asp-controller="Contact" asp-action="Index">Contact us</a></li>

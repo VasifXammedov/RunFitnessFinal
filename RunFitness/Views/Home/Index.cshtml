@@ -75,8 +75,10 @@
                                         </ul>
                                     </div>
                                     <div class="full paddding_left_15 margin-top_30">
-                                        <a class="main_bt" asp-controller="Service" asp-action="Index">Read More
-                                        <i class="fa fa-long-arrow-right"></i></a>
+                                        <a class="main_bt" asp-controller="Service" asp-action="Index">
+                                            Read More
+                                            <i class="fa fa-long-arrow-right"></i>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 text_align_right">
@@ -135,7 +137,7 @@
                         </div>
                         <div class="full paddding_left_15">
                             <p>
-                               @Html.Raw(Model.Success.Description)
+                                @Html.Raw(Model.Success.Description)
                             </p>
                         </div>
                         <div class="full paddding_left_15 margin-top_30">
@@ -222,16 +224,16 @@
                                     <form class="contact_form_inner" action="#">
                                         <fieldset>
                                             <div class="field">
-                                                <input type="text" name="name" placeholder="Your name" />
+                                                <input type="text" name="name" placeholder="@Model.Contact.Name" />
                                             </div>
                                             <div class="field">
-                                                <input type="email" name="email" placeholder="Email" />
+                                                <input type="email" name="email" placeholder="@Model.Contact.Email" />
                                             </div>
                                             <div class="field">
-                                                <input type="text" name="phone_no" placeholder="Phone number" />
+                                                <input type="text" name="phone_no" placeholder="@Model.Contact.PhoneNumber" />
                                             </div>
                                             <div class="field">
-                                                <textarea placeholder="Message"></textarea>
+                                                <textarea placeholder="@Model.Contact.Message"></textarea>
                                             </div>
                                             <div class="field center">
                                                 <button class="margin-top_30">SEND</button>
@@ -247,3 +249,4 @@
         </div>
     </div>
 </main>
+@*go ahead*@

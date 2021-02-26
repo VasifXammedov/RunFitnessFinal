@@ -36,8 +36,8 @@ namespace RunFitness.Controllers
                Success=_db.Successes.Where(s=>s.IsDeleted==false).FirstOrDefault(),
                SuccessDetail=_db.SuccessDetails.Where(sd=>sd.IsDeleted==false).FirstOrDefault(),
                FooterBottom=_db.FooterBottoms.Where(fb=>fb.IsDeleted==false).FirstOrDefault(),
-               Trainers=_db.Trainers.Where(t=>t.IsDeleted==false).ToList()
-               
+               Trainers=_db.Trainers.Where(t=>t.IsDeleted==false).ToList(),
+               Contact=_db.Contacts.Where(c=>c.IsDeleted==false).FirstOrDefault()
             };
             return View(homeVM);
         }

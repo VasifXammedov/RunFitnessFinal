@@ -18,6 +18,7 @@ namespace RunFitness.ViewModels
         public SuccessDetail SuccessDetail { get; set; }
         public FooterBottom FooterBottom { get; set; }
         public List<Trainer> Trainers { get; set; }
+        public Contact Contact { get; set; }
 
 
     }

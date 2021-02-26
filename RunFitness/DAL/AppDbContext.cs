@@ -29,6 +29,7 @@ namespace RunFitness.DAL
         public DbSet<SuccessDetail> SuccessDetails { get; set; }
         public DbSet<Bio> Bios { get; set; }
         public DbSet<FooterBottom> FooterBottoms { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
 
     }
 }
