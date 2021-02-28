@@ -14,6 +14,8 @@ namespace RunFitness.Models
         public string Title { get; set; }
         [Required]
         public string Image { get; set; }
+        [NotMapped]
+        public string Photo { get; set; }
         public string Description { get; set; }
         public bool IsDeleted { get; set; }
 

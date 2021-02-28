@@ -1,0 +1,16 @@
+﻿@model Service
+@{
+    ViewData["Title"] = "Detail";
+}
+<div class="col-12">
+    <img src="~/img/services/@Model.Image" width="300" />
+</div>
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Name:<br /><br /> @Model.Title</h4>
+        </div>
+    </div>
+</div>
+<a asp-action="Index" class="btn btn-secondary">Go Back</a>
+

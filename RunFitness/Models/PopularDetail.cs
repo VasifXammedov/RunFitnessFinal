@@ -12,6 +12,8 @@ namespace RunFitness.Models
         public int Id { get; set; }
         [Required]
         public string Image { get; set; }
+        [NotMapped]
+        public string Photo { get; set; }
         public bool IsDeleted { get; set; }
 
         [ForeignKey("Popular")]

@@ -1,0 +1,22 @@
+﻿@model Trainer
+@{
+    ViewData["Title"] = "Detail";
+}
+<div class="col-12">
+    <img src="~/img/trainers/@Model.Image" width="300" />
+</div>
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Name:<br /><br /> @Model.Name</h4>
+            <h4 class="card-title">Profesiya:<br /><br /> @Model.Profession</h4>
+            <h4 class="card-title">Description:<br /><br /> @Model.TrainerDetail.Description</h4>
+            <h4 class="card-title">Achievement:<br /><br /> @Model.TrainerDetail.Achievement</h4>
+            <h4 class="card-title">Experience:<br /><br /> @Model.TrainerDetail.Experience</h4>
+            <h4 class="card-title">Hobbie:<br /><br /> @Model.TrainerDetail.Hobbie</h4>
+            <h4 class="card-title">Facuilt:<br /><br /> @Model.TrainerDetail.Facuilt</h4>
+        </div>
+    </div>
+</div>
+<a asp-action="Index" class="btn btn-secondary">Go Back</a>
+

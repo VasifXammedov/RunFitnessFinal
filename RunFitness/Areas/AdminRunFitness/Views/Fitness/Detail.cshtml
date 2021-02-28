@@ -1,0 +1,17 @@
+﻿@model Fitness
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="col-12">
+    <img src="~/img/fitness/@Model.Image" width="300" />
+</div>
+<div class="col-md-4 grid-margin stretch-card">
+    <div class="card"style="background-color: greenyellow;">
+        <div class="card-body">
+            <h4 class="card-title">Name:<br /><br /> @Model.Title</h4>
+            <h4 class="card-title">Profesiya:<br /><br /> @Model.Description</h4>
+        </div>
+    </div>
+</div>
+<a asp-action="Index" class="btn btn-secondary">Go Back</a>

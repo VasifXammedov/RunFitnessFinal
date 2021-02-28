@@ -1,0 +1,57 @@
+﻿@model List<Bio>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body" style=" background-color: rgba(3,3,3,0.31);">
+            <h4 class="card-title" style=" color: darkblue;">Footer</h4>
+            <div class="table-responsive" style=" background-color: rgba(3,3,3,0.34);">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th style=" color: white">
+                                Photo
+                            </th>
+                            <th style="color: white">
+                                Title
+                            </th>
+                            <th style="color: white">
+                                Description
+                            </th>
+                            <th style="color: white">
+                                Address
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Bio bio in Model)
+                        {
+                        <tr>
+                            <td style=" background-color: rgba(3,3,3,0.43)">
+                                <img class="img-fluid" src="~/img/@bio.LogoImage"
+                                     alt="trainer">
+                            </td>
+                            <td style=" background-color: rgba(3,3,3,0.40);color: white">
+                                @bio.Title
+                            </td>
+                            <td style=" background-color: rgba(3,3,3,0.37);color: white">
+                                @bio.Description
+                            </td>
+                            <td style=" background-color: rgba(3,3,3,0.37);color: white">
+                                @bio.Address
+                            </td>
+                            <td style=" background-color: rgba(3,3,3,0.37)">
+                                <a asp-controller="Bio" asp-action="Detail" asp-route-id="@bio.Id" class="btn btn-success"><i class="mdi mdi-information"></i></a>
+                                <a asp-controller="Bio" asp-action="Update" asp-route-id="@bio.Id" class="btn btn-warning"><i class="mdi mdi-table-edit"></i></a>
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+

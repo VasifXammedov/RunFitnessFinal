@@ -1,0 +1,49 @@
+﻿@model List<Success>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body" style=" background-color: rgba(3,3,3,0.31);">
+            <h4 class="card-title" style=" color: darkblue;">Success</h4>
+            <div class="table-responsive" style=" background-color: rgba(3,3,3,0.34);">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th style=" color: white">
+                                 Photo
+                            </th>
+                            <th style="color: white">
+                                Title
+                            </th>
+                            <th style="color: white">
+                                Description
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Success success in Model)
+                        {
+                            <tr>
+                                <td style=" background-color: rgba(3,3,3,0.43)">
+                                    <img class="img-fluid" src="~/img/stories/@success.Image"
+                                         alt="trainer">
+                                </td>
+                                <td style=" background-color: rgba(3,3,3,0.40);color: white">
+                                    @success.Title
+                                </td>
+                                <td style=" background-color: rgba(3,3,3,0.37);color: white">
+                                    @success.Description
+                                </td>
+                                <td style=" background-color: rgba(3,3,3,0.37)">
+                                    <a asp-controller="Success" asp-action="Detail" asp-route-id="@success.Id" class="btn btn-success"><i class="mdi mdi-information"></i></a>
+                                    <a asp-controller="Success" asp-action="Update" asp-route-id="@success.Id" class="btn btn-warning"><i class="mdi mdi-table-edit"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

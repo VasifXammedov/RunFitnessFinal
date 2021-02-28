@@ -7,7 +7,13 @@
     <div id="carouselExampleIndicators" class="carousel slide Myslider ">
         <ol class="carousel-indicators">
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            @for ( int i=1;  i<Model.Sliders.Count; i++ )
+            {
+
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="@i"></li>
+               
+            }
+          
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">

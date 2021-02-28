@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -13,6 +14,8 @@ namespace RunFitness.Models
         public string Title { get; set; }
         [Required]
         public string Image { get; set; }
+        [NotMapped]
+        public string Photo { get; set; }
         public bool IsDeleted { get; set; }
         public DateTime? DeletedTime { get; set; }
     }

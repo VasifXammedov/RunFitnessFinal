@@ -10,6 +10,7 @@ namespace RunFitness.ViewModels
     {
         public List<Slider> Sliders { get; set; }
         public FitnessDetail FitnessDetail { get; set; }
+        public Fitness Fitness { get; set; }
         public List<ServiceDetail> ServiceDetails { get; set; }
         public List<Service> Services { get; set; }
         public List<Popular> Populars { get; set; }

@@ -1,0 +1,46 @@
+﻿@model List<Slider>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body" style=" background-color: rgba(3,3,3,0.31);">
+            <h4 class="card-title" style=" color: darkblue;">Sliders</h4>
+            <a asp-controller="Slider" asp-action="Create" class="btn btn-success">Create</a>
+            <div class="table-responsive" style=" background-color: rgba(3,3,3,0.34);">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th style=" color: white">
+                                 Photo
+                            </th>
+                            <th style="color: white">
+                                 Title
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Slider slider in Model)
+                        {
+                            <tr>
+                                <td style=" background-color: rgba(3,3,3,0.43)">
+                                    <img class="img-fluid" src="~/img/Slider/@slider.Image"
+                                         alt="trainer">
+                                </td>
+                                <td style=" background-color: rgba(3,3,3,0.40);color: white">
+                                  @Html.Raw(slider.Title)
+                                </td>
+                                
+                                <td style=" background-color: rgba(3,3,3,0.37)">
+                                    <a asp-controller="Slider" asp-action="Detail" asp-route-id="@slider.Id" class="btn btn-success"><i class="mdi mdi-information"></i></a>
+                                    <a asp-controller="Slider" asp-action="Update" asp-route-id="@slider.Id" class="btn btn-warning"><i class="mdi mdi-table-edit"></i></a>
+                                    <a asp-controller="Slider" asp-action="Delete" asp-route-id="@slider.Id" class="btn btn-danger"><i class="mdi mdi-delete"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
