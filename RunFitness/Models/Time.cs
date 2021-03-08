@@ -9,6 +9,6 @@ namespace RunFitness.Models
     {
         public int Id { get; set; }
         public string StartTime { get; set; }
-        public List<TrainerWeek> TrainerWeeks { get; set; }
+        public ICollection<TrainerWeek> TrainerWeeks{ get; set; }
     }
 }

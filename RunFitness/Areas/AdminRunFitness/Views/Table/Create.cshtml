@@ -1,0 +1,42 @@
+﻿@model TrainerWeek
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Create Time</h4>
+            <form class="forms-sample" method="post" enctype="multipart/form-data">
+                <div class="form-group" id="MainCategory">
+                    <label>Select Day</label>
+                    <select class="form-control" name="WeekCtgId">
+                        @foreach (Week weekCtg in ViewBag.Week)
+                        {
+                            <option value="@weekCtg.Id">@weekCtg.Name</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group" id="MainCategory">
+                    <label>Select Time</label>
+                    <input asp-for="@Model.Time.StartTime" class="form-control" placeholder="Time">
+                    <span class="text-danger" asp-validation-for="@Model.Time.StartTime"></span>
+                  
+                </div>
+
+                <div class="form-group" id="MainCategory">
+                    <label>Select Trainer</label>
+                    <select class="form-control" name="TrainerCtgId">
+                        @foreach (Trainer tarinerCtg in ViewBag.Trainers)
+                        {
+                            <option value="@tarinerCtg.Id">@tarinerCtg.Name</option>
+                        }
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                <a class="btn btn-light" asp-action="Index">Cancel</a>
+
+            </form>
+        </div>
+    </div>
+</div>

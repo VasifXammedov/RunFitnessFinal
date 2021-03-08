@@ -1180,7 +1180,7 @@ a:hover {
 }
 
 .tab-content > div:last-child {
-  display: none;
+  display: block;
 }
 
 h1 {
@@ -1521,6 +1521,10 @@ article th {
   }
   #trainer .single-trainer a img {
     width: 100%;
+  }
+
+  #signup{
+      display: block!important;
   }
   
 }
