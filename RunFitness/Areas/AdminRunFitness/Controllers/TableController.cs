@@ -37,7 +37,11 @@ namespace RunFitness.Areas.AdminRunFitness.Controllers
             return View(tableVM);
         }
 
-       
+
+
+
+
+        #region Create
 
         public IActionResult Create()
         {
@@ -46,8 +50,6 @@ namespace RunFitness.Areas.AdminRunFitness.Controllers
             GetTime();
             return View();
         }
-
-        #region Create
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -68,7 +70,6 @@ namespace RunFitness.Areas.AdminRunFitness.Controllers
             }
             
             trainerWeek.TrainerId = (int)TrainerCtgId;
-            //trainerWeek.TimeId = (int)TimeCtgId;
             trainerWeek.WeekId = (int)WeekCtgId;
             await _db.TrainerWeeks.AddAsync(trainerWeek);
             await _db.SaveChangesAsync();
@@ -132,36 +133,32 @@ namespace RunFitness.Areas.AdminRunFitness.Controllers
 
         #endregion
 
+
         #region Update
 
-        public IActionResult Update()
+        public IActionResult Update(int id)
         {
             GetTrainer();
             GetWeek();
             GetTime();
-            return View();
+            TrainerWeek trainerWeek = new TrainerWeek
+            {
+                TimeId = id
+            };
+            return View(trainerWeek);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Update(TrainerWeek trainerWeek, int? TrainerCtgId, int? TimeCtgId, int? WeekCtgId)
         {
-            GetTrainer();
-            GetWeek();
-            GetTime();
+           
 
+            var trainerWeek2 = await _db.TrainerWeeks.FirstOrDefaultAsync(t => t.TimeId == TimeCtgId && t.WeekId == WeekCtgId);
+            trainerWeek2.TrainerId = (int)TrainerCtgId;
+           
 
-
-            foreach (TrainerWeek tw in await _db.TrainerWeeks.ToListAsync())
-            {
-                if (WeekCtgId == tw.WeekId && TimeCtgId == tw.TimeId)
-                {
-                    return View();
-                }
-            }
-
-            trainerWeek.TrainerId = (int)TrainerCtgId;
-            trainerWeek.WeekId = (int)WeekCtgId;
+           
             await _db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
