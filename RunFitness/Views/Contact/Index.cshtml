@@ -66,6 +66,10 @@
                                             </div>
                                         </fieldset>
                                     </form>
+                                    @if (TempData["Success"] != null)
+                                    {
+                                        <p class="alert alert-success mt-3" id="successMessage">@TempData["Success"]</p>
+                                    }
                                 </div>
                             </div>
                         </div>

@@ -392,16 +392,16 @@ nav.nav-scroll {
   transition: all 0.6s;
 }
 
-#popular .image .overley {
-  position: absolute;
-  width: 416px;
-  height: 564px;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  background-color: rgba(5, 205, 155, 0.85);
-  text-align: right;
-}
+    #popular .image .overley {
+        position: absolute;
+        width: 356px;
+        height: 483px;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: rgba(5, 205, 155, 0.85);
+        text-align: right;
+    }
 
 #popular .image .overley:hover {
   opacity: 1;

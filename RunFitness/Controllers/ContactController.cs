@@ -44,11 +44,12 @@ namespace RunFitness.Controllers
             {
                 From = fromEmail,
                 Subject = contact.Email,
-                Body = $"Users Message: {contact.Message},{System.Environment.NewLine} + Users PhoneNamber: {contact.PhoneNumber}"
+                Body = $"Users Message: {contact.Message}{System.Environment.NewLine}Users PhoneNamber: {contact.PhoneNumber}"
             };
 
             message.To.Add(toEmail);
             client.Send(message);
+            TempData["Success"] = "Emioglu narahat olma messaj getdi!";
             return RedirectToAction("Index", "Contact");
         }
     }

@@ -227,10 +227,10 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="full contact_form">
-                                    <form method="post"  asp-action="Indexx"  enctype="multipart/form-data" class="contact_form_inner" >
+                                    <form method="post" asp-action="Indexx" enctype="multipart/form-data" class="contact_form_inner">
                                         <fieldset>
                                             <div class="field form-group">
-                                                <input type="text"  asp-for="@Model.Contact.Name" placeholder="Name " />
+                                                <input type="text" asp-for="@Model.Contact.Name" placeholder="Name " />
                                                 <span asp-validation-for="@Model.Contact.Name" class="text-danger"></span>
 
                                             </div>
@@ -251,6 +251,10 @@
                                             </div>
                                         </fieldset>
                                     </form>
+                                    @if (TempData["Success"] != null)
+                                    {
+                                        <p class="alert alert-success mt-3" id="successMessage">@TempData["Success"]</p>
+                                    }
                                 </div>
                             </div>
                         </div>

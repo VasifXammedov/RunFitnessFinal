@@ -346,6 +346,11 @@ C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\
 C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\Success\Update.cshtml.g.cs
 C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\Success\Detail.cshtml.g.cs
 C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\Footer\Index.cshtml.g.cs
+C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\Table\Index.cshtml.g.cs
+C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\Table\Create.cshtml.g.cs
+C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Views\Login\Register.cshtml.g.cs
+C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\Table\Delete.cshtml.g.cs
+C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\Table\Update.cshtml.g.cs
 C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -353,8 +358,10 @@ C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\bin\Debug\netcoreapp3.1\Micros
 C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\RunFitness.csproj.CoreCompileInputs.cache
 C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\RunFitness.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\Table\Index.cshtml.g.cs
-C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\Table\Create.cshtml.g.cs
-C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Views\Login\Register.cshtml.g.cs
-C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\Table\Delete.cshtml.g.cs
-C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\Table\Update.cshtml.g.cs
+C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
+C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\User\Index.cshtml.g.cs
+C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\User\ChangeStatus.cshtml.g.cs
+C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\User\ResetPassword.cshtml.g.cs
+C:\Users\Vasif\Desktop\RunFitnessFinal\RunFitness\obj\Debug\netcoreapp3.1\Razor\Areas\AdminRunFitness\Views\User\ChangeRole.cshtml.g.cs

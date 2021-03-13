@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +14,7 @@ using RunFitness.Models;
 namespace RunFitness.Areas.AdminRunFitness.Controllers
 {
     [Area("AdminRunFitness")]
+    [Authorize(Roles = "Admin")]
     public class FitnessController : Controller
     {
         private readonly AppDbContext _db;

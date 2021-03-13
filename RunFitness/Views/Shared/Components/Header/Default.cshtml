@@ -40,13 +40,23 @@
 
                                     @if (!User.Identity.IsAuthenticated)
                                     {
-                                        <li><a asp-controller="Login" asp-action="Index">Sign In</a></li>
+                                        <li><a asp-controller="Account" asp-action="Login">Sign In</a></li>
 
                                     }
                                     else
                                     {
-                                        <h5>@ViewBag.UserFullname</h5>
-                                        <li><a asp-controller="Login" asp-action="Signup">Sign Up</a></li>
+                                        @*<h5>@ViewBag.UserFullname</h5>
+                                        <li><a asp-controller="Account" asp-action="Logout">Logout</a></li>*@
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="far fa-user"></i>
+                                            </a>
+                                            <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" style="cursor:not-allowed;">@ViewBag.UserFullname</a></li>
+                                                <li><a class="dropdown-item text-center" asp-controller="Account" asp-action="Logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                                            </ul>
+                                        </li>
                                     }
                                 </ul>
                             </div>

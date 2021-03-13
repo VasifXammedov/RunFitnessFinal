@@ -36,7 +36,7 @@ namespace RunFitness.Extensions
 
     public enum Roles
     {
-        Admin,
-        Member
+        Member,
+        Admin
     }
 }
