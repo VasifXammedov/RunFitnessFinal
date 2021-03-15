@@ -42,6 +42,9 @@ namespace RunFitness.Controllers
             };
             return View(homeVM);
         }
+
+        // Eger databazada gostermek isteyirikse:.....
+
         //[HttpPost]
         //[ValidateAntiForgeryToken]
         //public async Task<IActionResult> Index(Contact contact)

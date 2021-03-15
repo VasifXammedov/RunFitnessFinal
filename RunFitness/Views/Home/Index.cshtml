@@ -113,7 +113,7 @@
             <div class="row mt-5">
                 @foreach (Popular popular in Model.Populars)
                 {
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6">
                         <div class="image">
                             <img src="~/img/popular/@popular.Image" class="img-fluid" />
                             <div class="overley">
@@ -169,10 +169,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-5">
+            <div class="row mt-5 trainer-content">
                 @foreach (Trainer tra in Model.Trainers.Take(4))
                 {
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-lg-6" style="width: max-content;">
                         <div class="single-trainer mb-45">
                             <div class="single-trainer-img">
                                 <a asp-controller="Trainer" asp-action="Detail" asp-route-id="@tra.Id"><img class="img-fluid" src="~/img/trainers/@tra.Image" alt="trainer"></a>
@@ -212,7 +212,7 @@
                                     <div id="map">
                                         <div id="googleMap" style="width:100%;height:440px;">
                                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6078.9310940031055!2d49.8410052!3d40.3763735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x92f42463a7364219!2sAlpha%20Gym!5e0!3m2!1sen!2s!4v1612347715562!5m2!1sen!2s"
-                                                    width="680" height="630" frameborder="0" style="border:0;" allowfullscreen=""
+                                                    width="100%" height="630" frameborder="0" style="border:0;" allowfullscreen=""
                                                     aria-hidden="false" tabindex="0">
                                             </iframe>
                                         </div>
@@ -226,6 +226,7 @@
                     <div class="full">
                         <div class="row">
                             <div class="col-lg-12">
+                               <div asp-validation-summary="ModelOnly"></div>
                                 <div class="full contact_form">
                                     <form method="post" asp-action="Indexx" enctype="multipart/form-data" class="contact_form_inner">
                                         <fieldset>

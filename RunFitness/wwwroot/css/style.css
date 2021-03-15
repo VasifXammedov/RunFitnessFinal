@@ -1457,75 +1457,300 @@ article th {
 }
 
 @media only screen and (max-width: 1200px) {
-  .readmore_bt {
-    top: 700px !important;
-  }
-  #stories .container-fluid .white_bg {
-    height: 100vh;
-  }
-  #stories .container-fluid .white_bg .img-responsive {
-    margin-top: 100px;
-  }
+    .readmore_bt {
+        top: 550px !important;
+    }
+
+    #stories .container-fluid .white_bg {
+        height: 100vh;
+    }
+
+        #stories .container-fluid .white_bg .img-responsive {
+            margin-top: 100px;
+        }
+
+    #fitness img {
+        height: 107vh;
+    }
+
+    #popular {
+        height: 100vh;
+    }
+
+    #stories .white_bg {
+        height: 80vh !important;
+    }
+
+    #contacmail {
+        z-index: 15;
+    }
 }
 
 @media only screen and (max-width: 992px) {
-  #fitness .half_bg_theme::after {
-    width: 50%;
-    height: 46% !important;
-  }
-  #stories .container-fluid .white_bg {
-    height: 160vh;
-  }
+    #fitness .half_bg_theme::after {
+        width: 50%;
+        height: 46% !important;
+    }
+
+    #stories .container-fluid .white_bg {
+        height: 160vh;
+    }
+
+    #carouselExampleIndicators .Read .slider-text {
+        width: 100%;
+        font-size: 75px;
+    }
+
+    #Services .img-responsive {
+        margin-top: -348px;
+    }
+
+    #trainer {
+        margin-top: 380px;
+    }
+
+    .contact_section {
+        height: 180vh;
+    }
+
+        .contact_section .contact_form {
+            max-width: 100%;
+            margin-top: 192px;
+        }
 }
 
 @media only screen and (max-width: 768px) {
-  #fitness .half_bg_theme::after {
-    width: 50%;
-    height: 46% !important;
-  }
+    .Myslider .carousel-inner .Read .slider-text {
+        top: 221px;
+        left: 5%;
+        font-size: 63px;
+    }
+
+    .Myslider .carousel-inner .Read .readmore_bt {
+        top: 500px !important;
+        margin-left: -62px;
+    }
+
+    #Services .heading_main h2 {
+        text-align: center;
+    }
+
+    #Services .img-responsive {
+        display: none;
+    }
+
+    #popular {
+        height: 330vh;
+    }
+
+        #popular .image {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+    #stories {
+        height: 100vh;
+    }
+
+        #stories .img-responsive {
+            margin-top: -370px !important;
+        }
+
+        #stories .white_bg {
+            height: 210vh !important;
+        }
+
+    #trainer .single-trainer a img {
+        width: 100%;
+    }
+
+    #trainer .trainer-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    #contact .heading_main h2 {
+        font-size: 38px;
+    }
+
+    .contact_section {
+        height: 184vh !important;
+        margin-top: 3px;
+    }
+
+        .contact_section #map iframe {
+            width: 100%;
+        }
+
+    .full h3 {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .footer_blog {
+        text-align: center;
+    }
+
+    .social_icon {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .footer-img {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 576px) {
-  .Myslider .Read .slider-text {
-    font-size: 54px !important;
-    margin-top: -68px;
-  }
-  #stories .container-fluid .white_bg {
-    height: 138vh;
-  }
-  #stories .container-fluid .white_bg .img-responsive {
-    margin-top: 32px;
-  }
-  #fitness h2 {
-    font-size: 40px !important;
-    margin-top: 20px !important;
-  }
-  #Services h2 {
-    font-size: 33px;
-    text-align: center;
-  }
-  #popular {
-    height: 400vh;
-  }
-  #popular h2 {
-    font-size: 33px;
-  }
-  #stories .white_bg {
-    height: 190vh !important;
-  }
-  #stories .white_bg h2 {
-    font-size: 33px !important;
-  }
-  #trainer h2 {
-    font-size: 35px;
-  }
-  #trainer .single-trainer a img {
-    width: 100%;
-  }
+    #navigation {
+        width: 44%;
+    }
 
-  #signup{
-      display: block!important;
-  }
-  
+        #navigation #NavClose {
+            display: none;
+        }
+
+    .Myslider .Read .slider-text {
+        font-size: 54px !important;
+        margin-top: 40px;
+    }
+
+    .Myslider .Read .readmore_bt {
+        margin-left: -42px !important;
+    }
+
+    #stories .container-fluid .white_bg {
+        height: 138vh;
+    }
+
+        #stories .container-fluid .white_bg .img-responsive {
+            margin-top: 32px;
+        }
+
+    #fitness h2 {
+        font-size: 40px !important;
+        margin-top: 20px !important;
+    }
+
+    #Services h2 {
+        font-size: 33px;
+        text-align: center;
+    }
+
+    #popular {
+        height: 320vh;
+    }
+
+        #popular h2 {
+            font-size: 33px;
+        }
+
+        #popular .image {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+    #stories .white_bg {
+        height: 190vh !important;
+    }
+
+        #stories .white_bg h2 {
+            font-size: 33px !important;
+        }
+
+    #stories .img-responsive {
+        margin-top: -300px !important;
+    }
+
+    #trainer h2 {
+        font-size: 35px;
+    }
+
+    #trainer .single-trainer a img {
+        width: 100%;
+    }
+
+    #contact .heading_main h2 {
+        font-size: 38px;
+    }
+
+    .contact_section {
+        height: 197vh;
+    }
+
+        .contact_section #map iframe {
+            width: 100%;
+        }
+
+    .full h3 {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .footer_blog {
+        text-align: center;
+    }
+
+    .social_icon {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .footer-img {
+        text-align: center;
+    }
 }
 
+@media only screen and (max-width: 375px) {
+    #navigation {
+        width: 44%;
+    }
+
+        #navigation #NavClose {
+            display: none;
+        }
+}
