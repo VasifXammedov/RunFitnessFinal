@@ -172,7 +172,7 @@
             <div class="row mt-5 trainer-content">
                 @foreach (Trainer tra in Model.Trainers.Take(4))
                 {
-                    <div class="col-lg-3 col-lg-6" style="width: max-content;">
+                    <div class="col-lg-3">
                         <div class="single-trainer mb-45">
                             <div class="single-trainer-img">
                                 <a asp-controller="Trainer" asp-action="Detail" asp-route-id="@tra.Id"><img class="img-fluid" src="~/img/trainers/@tra.Image" alt="trainer"></a>
